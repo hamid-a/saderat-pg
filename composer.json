@@ -10,7 +10,7 @@
             "email": "activelord@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "version": "0.9",
     "require": {
         "php": ">=7.0"
     },

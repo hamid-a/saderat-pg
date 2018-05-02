@@ -1,0 +1,32 @@
+{
+    "name": "hamid-a/saderat-pg",
+    "description": "Saderat Payment Gateway PHP Package",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["saderat", "saderat bank", "saderat payment gateway", "payment gateway", "gateway"],
+    "authors": [
+        {
+            "name": "Hamid Azimi",
+            "email": "activelord@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaderatPaymentGateway\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SaderatPaymentGateway\\Laravel\\SaderatPGServiceProvider"
+            ],
+            "aliases": {
+                "SaderatPG": "SaderatPaymentGateway\\Laravel\\Facade\\SaderatPG"
+            }
+        }
+    }
+}
